@@ -48,12 +48,12 @@ render(){
 return(
     <div className='directory-menu'>
         {
-        this.state.section.map(({title, imageUrl, id}) => (
-            <MenuItem key ={id} title={title}/>
+        this.state.section.map(({title, imageUrl, id, size}) => (
+            <MenuItem key ={id} title={title} imageUrl={imageUrl} size={size} />
             ))
             } 
     </div>
 );
 }
 }
-export default MenuItem; 
+export default Directory; 
